@@ -1,0 +1,62 @@
+/*////////////////////////////////////
+      Basic Styles
+///////////////////////////////////*/
+.container{
+  margin: 0 auto;
+  max-width: 80%;
+}
+body, a{
+  font-family: helvetica;
+}
+h1{
+  margin: 0;
+}
+
+/*////////////////////////////////////
+      Header Styles
+///////////////////////////////////*/
+header{
+  align-items: center;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-around;
+  left: 50%;
+  padding: 2em 0;
+  position: fixed;
+  top: 0;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  width: 100%;
+}
+header h1{
+  color: rgb(196, 46, 26);
+  font-size: 3em;
+  font-weight: lighter;
+  text-align: center;
+  transition: 0.5s;
+}
+
+nav a{
+  color: rgb(196, 46, 26);
+  padding: 7px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+nav a:hover{
+  color: rgb(152, 95, 87);
+}
+/*////////////////////////////////////
+      Main Styles
+///////////////////////////////////*/
+body{
+  background-color: rgb(196, 46, 26);
+  color: #eee;
+  font-size: 1.5em;
+  line-height: 2em;
+  text-align: justify;
+}
+.main-text{
+  margin-top: 200px;
+}

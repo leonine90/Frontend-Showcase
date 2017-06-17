@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Fullscreen Navigation">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Fullscreen Navigation</h1>
+  </header>
+  <div class="overlay" id="myNav">
+    <span class="close-btn" onclick="closeNav()">&times;</span>
+    <div class="overlay-content">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+  <div class="container">
+    <span class="hamburger" onclick="openNav()">&#9776;</span>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

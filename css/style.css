@@ -1,0 +1,108 @@
+/*////////////////////////////////////
+      Basic Styles
+///////////////////////////////////*/
+.container{
+  margin: 0 auto;
+  max-width: 90%;
+}
+body, a{
+  color:rgb(64, 133, 36);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/*////////////////////////////////////
+      Header Styles
+///////////////////////////////////*/
+header{
+  background-color:rgb(64, 133, 36);
+  padding: 1em 0;
+}
+header h1{
+  color: white;
+  font-size: 3em;
+  font-weight: bolder;
+  text-align: center;
+}
+/*////////////////////////////////////
+      Grid Styles
+///////////////////////////////////*/
+main{
+  
+}
+.grid{
+  margin: 0;
+  padding: 0;
+}
+.grid-item{
+  height: 420px;
+  list-style-type: none;
+  text-align: center;
+  transition:all 0.21s ease-in-out;
+  width: 100%;
+}
+.grid-item:hover{
+  background-color:rgb(64, 133, 36);
+}
+.grid-item a{
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  padding-top: 30%;
+  text-decoration: none;
+  width: 100%;
+}
+.grid-item:hover a{
+  color:white;
+}
+.title{
+  padding-top: 50px;
+  position: relative;
+  transform: translateY(10px);
+  transition: all 0.21s ease-in-out;
+}
+.grid-item:hover .title{
+  transform: translateY(-40px);
+}
+.title:before{
+  content: '';
+  background-color: rgb(64, 133, 36);
+  height: 10px;
+  left: 50%;
+  position: absolute;
+  top:15px;
+  transform: translateX(-50%);
+  transition: all 0.21s ease-in-out;
+  width:100px;
+}
+.grid-item:hover .title:before{
+  background-color: white;
+  margin-top: 80px;
+}
+.module-name{
+  transform: translateY(-10px);
+  transition:all 0.21s linear;
+}
+.grid-item:hover .module-name{
+  transform: translateY(0);
+}
+/*////////////////////////////////////
+      Media Query Styles
+///////////////////////////////////*/
+@media screen and (min-width:570px) {
+  .grid-item{
+    display: inline-block;
+    width: 48%;
+  }
+  .grid-item a{
+    padding-top: 35%;
+  }
+}
+@media screen and (min-width:1001px) {
+  .grid-item{
+    display: inline-block;
+    width: 33%;
+  }
+  .grid-item a{
+    padding-top: 35%;
+  }
+}

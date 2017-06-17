@@ -1,0 +1,75 @@
+/*////////////////////////////////////
+      Basic Styles
+///////////////////////////////////*/
+body, a{
+  background-color: black;
+  font-family: helvetica;
+}
+
+/*////////////////////////////////////
+      Header Styles
+///////////////////////////////////*/
+.header{
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*////////////////////////////////////
+      Backgrounds Styles
+///////////////////////////////////*/
+.bg{
+  align-items: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  min-height: 800px;
+  opacity: 0.8;
+}
+.bg-1{
+  background-image: url('../images/image1.jpg');
+}
+.bg-2{
+  background-image: url('../images/image2.jpg');
+}
+.bg-3{
+  background-image: url('../images/image3.jpg');
+}
+.bg-4{
+  background-image: url('../images/image4.jpg');
+}
+
+/*////////////////////////////////////
+      Navigation Styles
+///////////////////////////////////*/
+.nav{
+  position: fixed;
+  right:100px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  z-index: 2;
+}
+
+.nav .nav-link{
+  background-color: rgba(0,0,0,0);
+  border: solid 4px #fff;
+  border-radius: 50%;
+  display:block;
+  height: 20px;
+  margin: 20px;
+  transition: 0.3s;
+  width: 20px;
+}
+
+.nav .nav-link:hover{
+  background-color: #aaa;
+}
+.active{
+  background-color: #fff;
+}

@@ -1,0 +1,85 @@
+/*////////////////////////////////////
+      Basic Styles
+///////////////////////////////////*/
+.container{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 90%;
+}
+body, a{
+  background-color: black;
+  font-family: helvetica;
+}
+
+/*////////////////////////////////////
+      Header Styles
+///////////////////////////////////*/
+header{
+  padding: 1em 0;
+}
+header h1{
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+}
+/*////////////////////////////////////
+      Switch Styles
+///////////////////////////////////*/
+.switch{
+  position: relative;
+  height: 110px;
+  width: 200px;
+}
+.switch input{
+  display: none;
+}
+.slider{
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 90px;
+  width: 90px;
+  left: 10px;
+  bottom: 10px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #e7df2a;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #e7df2a;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(90px);
+  -ms-transform: translateX(90px);
+  transform: translateX(90px);
+}
+.switch + p{
+  color: #e7df2a;
+  font-weight: bolder;
+}
+.switchedOn{
+  background-color: #e7a12a;
+  transition: all 0.8s ease-in;
+}
+/*////////////////////////////////////
+      Media Query Styles
+///////////////////////////////////*/
+
+

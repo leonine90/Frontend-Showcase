@@ -1,0 +1,270 @@
+/*////////////////////////////////////
+      Basic Styles
+///////////////////////////////////*/
+.container{
+  margin: 0 auto;
+  width: 80%;
+}
+body, a{
+  color:black;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/*////////////////////////////////////
+      Header Styles
+///////////////////////////////////*/
+header{
+  background-color: white;
+  left: 0;
+  padding: 70px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+header h1{
+  color: #888;
+  font-weight: normal;
+  text-align: center;
+}
+
+/*////////////////////////////////////
+      Sections Styles
+///////////////////////////////////*/
+section{
+  height: 1000px;
+  position: relative;
+}
+.section1{
+  background-color: rgb(182, 57, 117);
+}
+.section2{
+  background-color: rgb(60, 182, 57);
+}
+.section3{
+  background-color: rgb(57, 96, 182);
+}
+.section4{
+  background-color: rgb(112, 57, 182);
+}
+.section5{
+  background-color: rgb(176, 204, 41);
+}
+.section6{
+  background-color: rgb(41, 204, 194);
+}
+/*////////////////////////////////////
+      Icon Styles
+///////////////////////////////////*/
+.icon-row{
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.icon-row-1{
+  top: 40%;
+  transform: translate(-50%,-50%);
+}
+.icon-row-2{
+  top: 60%;
+  transform: translate(-50%,-50%);
+}
+.fa{
+  border-radius: 50%;
+  color: white;
+  font-size: 3em;
+  height: 90px;
+  line-height: 90px;
+  margin: 20px;
+  text-decoration: none;
+  width: 90px;
+}
+.icon-row .fa{
+  position: relative;
+  transition: 0.3s;
+}
+/*////////////////////////////////////
+      Section1 Icon Styles
+///////////////////////////////////*/
+.section1 .icon-row .fa,.section6 .icon-row-1 .fa{
+  background-color: rgba(255,255,255,0.1);
+}
+.section1 .icon-row .fa:hover{
+  background-color: white;
+  color: rgb(182, 57, 117);
+}
+.section1 .icon-row .fa::after, .section4 .icon-row .fa::after, .section5 .icon-row .fa::after{
+  border: solid 4px white;
+  border-radius: 50%;
+  content: '';
+  height: 100%;
+  left:-13px;
+  opacity: 0;
+  padding: 9px;
+  position: absolute;
+  top: -13px;
+  transition: transform 0.2s, opacity 0.2s;
+  width: 100%;
+}
+.section1 .icon-row-1 .fa::after{
+  transform: scale(0.8);
+}
+.section1 .icon-row-2 .fa::after{
+  transform: scale(1.2);
+}
+.section1 .icon-row .fa:hover::after{
+  opacity: 1;
+  transform: scale(1);
+}
+/*////////////////////////////////////
+      Section2&3 Icon Styles
+///////////////////////////////////*/
+.section2 .icon-row .fa{
+  border: solid 4px white;
+  color: rgb(60, 182, 57);
+}
+
+.section2 .icon-row .fa::after,.section3 .icon-row .fa::after{
+  background-color: white;
+  border-radius: 50%;
+  content: '';
+  height: 100%;
+  left:0;
+  position: absolute;
+  top: 0;
+  transition: transform 0.2s, opacity 0.2s;
+  width: 100%;
+  transform: scale(1.01);
+  z-index: -1;
+}
+
+.section2 .icon-row-1 .fa:hover::after{
+  transform: scale(0.8);
+}
+.section2 .icon-row-2 .fa:hover,.section3 .icon-row-1 .fa:hover{
+  color: white;
+}
+.section2 .icon-row-2 .fa:hover::after{
+  transform: scale(0);
+}
+
+.section3 .icon-row .fa{
+  border: solid 4px white;
+  color: rgb(57, 96, 182);
+}
+
+.section3 .icon-row-1 .fa:hover::after{
+  opacity: 0;
+  transform: scale(1.5);
+}
+.section3 .icon-row-2 .fa::after{
+  opacity: 0;
+  transform: scale(1.5);
+}
+.section3 .icon-row-2 .fa{
+  color: white;
+}
+.section3 .icon-row-2 .fa:hover{
+  color: rgb(57, 96, 182);
+}
+.section3 .icon-row-2 .fa:hover::after{
+  opacity: 1;
+  transform: scale(1.01);
+}
+/*////////////////////////////////////
+      Section4 Icon Styles
+///////////////////////////////////*/
+.section4 .icon-row .fa::after{
+  border-style: dashed;
+  left: -4px;
+  opacity: 1;
+  padding: 0;
+  top:-4px;
+  z-index: 1;
+}
+.section4 .icon-row-2 .fa:hover::after{
+  animation-name: rotation;
+  animation-duration: 15s;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.section4 .icon-row .fa{
+  box-shadow: 0 0 0 4px rgba(255,255,255,1);
+  color: white;
+}
+.section4 .icon-row .fa:hover{
+  box-shadow: 0 0 0 0 rgba(255,255,255,0);;
+}
+
+@keyframes rotation {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+}
+/*////////////////////////////////////
+      Section5 Icon Styles
+///////////////////////////////////*/
+.section5 .icon-row-1 .fa:hover{
+  box-shadow: 0 0 0 10px rgba(255,255,255,1);
+}
+.section5 .icon-row-2 .fa:hover{
+  box-shadow: 0 0 0 10px rgba(255,255,255,0.5);
+}
+.section5 .icon-row .fa::after{
+  opacity: 1;
+  transform: scale(0.9);
+}
+.section5 .icon-row .fa:hover::after{
+  transform: scale(0.7);
+}
+.section5 .icon-row-1 .fa:hover::after{
+  opacity: 0.5;
+}
+.section5 .icon-row-2 .fa:hover::after{
+  opacity: 1;
+}
+/*////////////////////////////////////
+      Section6 Icon Styles
+      rgb(41, 204, 194);
+///////////////////////////////////*/
+.section6 .icon-row-1 .fa{
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.3);
+}
+.section6 .icon-row-2 .fa{
+  box-shadow: 0 0 0 4px rgba(255,255,255,1);
+}
+.section6 .icon-row-1 .fa::after{
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px rgba(255,255,255,0.4);
+  content: '';
+  height: 100%;
+  left:0;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  transition: transform 0.2s, opacity 0.2s;
+  width: 100%;
+  transform: scale(1.01);
+  z-index: -1;
+}
+.section6 .icon-row-1 .fa:hover{
+  animation: growFade 0.5 linear;
+}
+@keyframes growFade {
+  from{
+    opacity: 1;
+    transform: scale(1);
+  }
+  90%{
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  to{
+    opacity: 0;
+  }
+}
