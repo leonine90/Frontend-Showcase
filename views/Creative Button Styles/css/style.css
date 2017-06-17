@@ -32,27 +32,25 @@ header h1{
       Sections Styles
 ///////////////////////////////////*/
 section{
-  height: 1000px;
-  position: relative;
+  height: 100%;
+  padding: 250px 0px;
+  padding-top: 300px;
+  width: 100%;
 }
 .section1{
   background-color: rgb(182, 57, 117);
 }
 .section2{
   background-color: rgb(60, 182, 57);
-  height: 500px;
 }
 .section3{
   background-color: rgb(57, 96, 182);
-  height: 700px;
 }
 .section4{
   background-color: rgb(112, 57, 182);
-  height: 700px;
 }
 .section5{
   background-color: rgb(176, 204, 41);
-  height: 500px;
 }
 .section6{
   background-color: rgb(41, 204, 194);
@@ -62,8 +60,6 @@ section{
 ///////////////////////////////////*/
 .btn-row{
   display: inline-block;
-  left: 50%;
-  position: absolute;
   text-align: center;
   width: 100%;
 }
